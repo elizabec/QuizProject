@@ -13,6 +13,8 @@ int main() {
 			cin >> option;
 			if (option < 1 || option > 5) {
 				cout << INVALID;
+				cin.clear();
+				char(cin.get()); //flush unwanted character. No characters allowed in this buffer!
 			}
 		} while (option < 1 || option > 5);
 		if (option >= 1 || option <= 5) {
@@ -21,10 +23,10 @@ int main() {
 				char choice;
 				cout << "Do you want to start a new game (Y/N)? ";
 				cin >> choice;
-				choice = toupper(choice);
+				choice = toupper(choice); //making character uppercase, for simplicity
 				switch (choice) {
 				case 'Y':
-					cout << "Starting new game!" << endl << endl;
+					cout << "Starting new game!\n\n";
 					startGame();
 					break;
 				case 'N':
@@ -46,13 +48,19 @@ int main() {
 			case 4:
 				char filedel;
 				cout << "This option will complete clear the save file.\n";
-				cout << "Are you sure you want to delete everything (Y/N)? ";
-				cin >> filedel;
-				filedel = toupper(filedel);
+				do {
+					cout << "Are you sure you want to delete everything (Y/N)? ";
+					cin >> filedel;
+					filedel = toupper(filedel); //again, making char uppercase
+					if (filedel != 'Y' && filedel != 'N') {
+						cout << INVALID;
+					}
+				} while (filedel != 'Y' && filedel != 'N');
+				
 				switch (filedel) {
 				case 'Y':
 					deleteFile();
-					cout << "Save file deleted!";
+					cout << "Save file deleted!\n";
 					break;
 				case 'N':
 					break;

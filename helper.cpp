@@ -42,8 +42,14 @@ void addQuestion() {
 	do {
 		string input, str;
 		int correct;
-		cout << "Do you want to add new question (Y/N)? ";
-		cin >> option;
+		do {
+			cout << "Do you want to add new question (Y/N)? ";
+			cin >> option;
+			option = toupper(option);
+			if (option != 'N' && option != 'Y') { //validating input for Y/N
+				cout << INVALID;
+			}
+		} while (option != 'N' && option != 'Y');
 		if (option == 'n' || option == 'N') {
 			break;
 		}
@@ -54,51 +60,53 @@ void addQuestion() {
 				cout << "Enter your question: ";
 				cin.get(x); // waiting for user input
 				getline(cin, input);
-				if (input == "") {
+				if (input == BLANK) {
 					cout << INVALID;
 				}
-			} while (input == "");
+			} while (input == BLANK);
 			str = "Q";
-			str.append(to_string(qno));
-			str.append(": ").append(input);
+			str.append(to_string(qno)); //Add Qx tag to each question, x = question number
+			str.append(": ");
+			file << left;
+			file << setw(WIDTH) << str;
 			qno++;
-			file << str << endl;
+			file << input << endl;
 			// input for all 4 answers, making sure it's a valid input
 			do { 
-				cout << "Enter correct answer: ";
+				cout << CORRECT;
 				getline(cin, input);
-				if (input == "") {
+				if (input == BLANK) {
 					cout << INVALID;
 				}
-			} while (input == "");
+			} while (input == BLANK);
 			str = input;
 			file << str << endl;
 			do {
-			cout << "Enter alternative 1: ";
+			cout << ALTERNATIVE << " 1: ";
 			getline(cin, input);
-				if (input == "") {
+				if (input == BLANK) {
 					cout << INVALID;
 				}
-			} while (input == "");
+			} while (input == BLANK);
 			str = input;
 			file << str << endl;
 
 			do {
-				cout << "Enter alternative 2: ";
+				cout << ALTERNATIVE << " 2: ";
 				getline(cin, input);
-				if (input == "") {
+				if (input == BLANK) {
 					cout << INVALID;
 				}
-			} while (input == "");
+			} while (input == BLANK);
 			str = input;
 			file << str << endl;
 			do {
-				cout << "Enter alternative 3: ";
+				cout << ALTERNATIVE << " 3: ";
 				getline(cin, input);
-				if (input == "") {
+				if (input == BLANK) {
 					cout << INVALID;
 				}
-			} while (input == "");
+			} while (input == BLANK);
 			str = input;
 			file << str << endl;
 
@@ -115,8 +123,8 @@ void addQuestion() {
 
 void deleteFile() {
 	ofstream file;
-	file.open(FILENAME, ios::out | ios::trunc);
-	if (!file) {
+	file.open(FILENAME, ios::out | ios::trunc); //truncate file to nothing, effectively deleting all contents
+	if (!file) { //still got to check if the file is there
 		cout << NOFILE;
 	}
 	file.close();
@@ -125,13 +133,13 @@ void deleteFile() {
 void qList() {
 	ifstream file;
 	string line;
-	file.open(FILENAME, ios::in);
-	if (!file) {
+	file.open(FILENAME);
+	if (!file) { //yoohoo, any files home?
 		cout << NOFILE;
 	}
 	while (file) {
 		getline(file, line);
-		if (line[0] == 'Q') {
+		if (line[0] == 'Q') { //Only print lines with Qx tag
 			cout << line << endl;
 		}
 	}
@@ -202,21 +210,21 @@ void startGame() {
 void results(vector<Quiz>& q) {
 	int total = 0;
 
-	for (int i = 0; i < 5; ++i) {
+	for (int i = 0; i < QUESTIONS; ++i) {
 		total += q[i].askQ(i + 1); //get score from askQ function, i = question number
 	}
 	cout << "You scored: " << total << " out of 5!\n";
 	if (total == 5) {
-		cout << "Perfect score!\n\n";
+		cout << PERFECT << "\n\n";
 	}
 	else if (total == 3 || total == 4) {
-		cout << "Almost!\n\n";
+		cout << ALMOST << "\n\n";
 	}
 	else if (total == 1 || total == 2) {
-		cout << "Better luck next time!\n\n";
+		cout << BETTER << "\n\n";
 	}
 	else {
-		cout << "You get NOTHING. You LOSE. Good DAY sir!\n\n";
+		cout << NOPE <<"\n\n";
 	}
 }
 

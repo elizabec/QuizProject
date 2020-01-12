@@ -1,53 +1,53 @@
 
-Q1: What is Chroms little sisters name?
+Q1:  What is Chroms little sisters name?
 Lissa
 Nowi
 Emmeryn
 Mila
 
-Q2: What is Sothis also known as?
+Q2:  What is Sothis also known as?
 The Beginning
 The Firestorm
 The Earth Mother
 The End
 
-Q3: What Crest does Byleth bear?
+Q3:  What Crest does Byleth bear?
 The Crest of Flames
 The Crest of Charon
 The Crest of Gloucester
 The Crest of Seiros
 
-Q4: What is Flayn's true name?
+Q4:  What is Flayn's true name?
 Cethleann
 Sothis
 Seiros
 Naga
 
-Q5: What relation is Seteth to Flayn?
+Q5:  What relation is Seteth to Flayn?
 Father
 Son
 Uncle
 Brother
 
-Q6: How many Crests does Lysithea von Ordelia have?
+Q6:  How many Crests does Lysithea von Ordelia have?
 2
 4
 1
 12
 
-Q7: Which of these is not one of the Four Saints?
+Q7:  Which of these is not one of the Four Saints?
 Saint Seiros
 Saint Cichol
 Saint Indech
 Saint Cethleann
 
-Q8: What colour is Marianne's hair?
+Q8:  What colour is Marianne's hair?
 Blue
 Pink
 Grey
 Red
 
-Q9: Who is the leader of The Church of Seiros?
+Q9:  Who is the leader of The Church of Seiros?
 Lady Rhea
 Lord Lonato
 Lady Cornelia
@@ -86,7 +86,7 @@ Brigid
 Q15: What is the name of the Heroes Relic of House Goneril?
 Freikugel
 Failnaught
-L£in
+LÂ£in
 Blutgang
 
 Q16: What weapon does Catherine wield?
@@ -100,3 +100,39 @@ Dancer
 Bard
 Lord
 Manakete
+
+Q18: What is the default name for the Avatar in Fire Emblem: Awakening?
+Robin
+Corrin
+Byleth
+Alm
+
+Q19: What is the inevitable fate of all Manaketes?
+Insanity
+Death
+Metamorphosis
+Breaking out into song and dance at a very inappropriate time
+s
+Q20: What is the toy that Geralt and Yennefer used?
+Unicorn plushie
+Teddy bear
+Bunny slippers
+BFD
+
+Q21: What is not an alias for Geralt of Rivia?
+The Jester of Tortuga
+The Butcher of Bladviken
+The White Wolf
+Gwynbleidd
+
+Q22: What deformity was Yennefer born with?
+Hunchback
+Lazy eye
+Polydactyly
+Scoliosis
+
+Q23:    Where did Geralt gain his Witcher status?
+Kaer Morhen
+Bladviken
+Cintra
+Forest of Brokilon
