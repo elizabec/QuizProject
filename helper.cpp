@@ -9,11 +9,11 @@ void shuffle_a(vector<string>& a);
 void results(vector<Quiz>& q);
 
 void begin() {
-	cout << "Welcome to the Quiz!" << endl;	
+	cout << "~ ~ Elli On Holiday Quiz ~ ~\n\n";	
 }
 
 void menu_options() {
-	cout << "Please select an option:" << endl;
+	cout << "Please select an option:\n";
 	cout << "1: Start a new game\n2: Add a new question\n3: See all questions\n4: Clear all\n5: Quit\n\n";
 }
 

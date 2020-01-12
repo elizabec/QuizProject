@@ -49,7 +49,7 @@ int main() {
 				char filedel;
 				cout << "This option will complete clear the save file.\n";
 				do {
-					cout << "Are you sure you want to delete everything (Y/N)? ";
+					cout << "Are you sure you want to delete everything (Y/N)? "; //because we don't want any accidents
 					cin >> filedel;
 					filedel = toupper(filedel); //again, making char uppercase
 					if (filedel != 'Y' && filedel != 'N') {
