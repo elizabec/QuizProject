@@ -5,6 +5,7 @@ using namespace std;
 
 int main() {
 	int option = 0;
+	bool b = true;
 	begin();
 	do {
 		menu_options();
@@ -13,11 +14,14 @@ int main() {
 			cin >> option;
 			if (option < 1 || option > 5) {
 				cout << INVALID;
+				cout << "Press Enter to try again.\n";
 				cin.clear();
+				cin.ignore(numeric_limits<streamsize>::max(), '\n'); //ignore strings and characters, no matter how long
 				char(cin.get()); //flush unwanted character. No characters allowed in this buffer!
+				
 			}
 		} while (option < 1 || option > 5);
-		if (option >= 1 || option <= 5) {
+		if (option >= 1 || option <= 5 && b == true) { // double checking if looping properly
 			switch (option) {
 			case 1:
 				char choice;
