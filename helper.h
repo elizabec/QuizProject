@@ -20,6 +20,7 @@ void startGame();
 #define WIDTH 5
 #define ANSWERS 3
 #define QUESTIONS 5
+#define QINDEX 5
 #define BLANK ""
 #define CORRECT "Enter correct answer: "
 #define ALTERNATIVE "Enter alternative"

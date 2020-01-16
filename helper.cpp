@@ -67,8 +67,7 @@ void addQuestion() {
 			str = "Q";
 			str.append(to_string(qno)); //Add Qx tag to each question, x = question number
 			str.append(": ");
-			file << left;
-			file << setw(WIDTH) << str;
+			file << left << setw(WIDTH) << str;
 			qno++;
 			file << input << endl;
 			// input for all 4 answers, making sure it's a valid input
@@ -137,10 +136,17 @@ void qList() {
 	if (!file) { //yoohoo, any files home?
 		cout << NOFILE;
 	}
-	while (file) {
-		getline(file, line);
-		if (line[0] == 'Q') { //Only print lines with Qx tag
-			cout << line << endl;
+	if (file.peek() == EOF) {
+		cout << "No questions to see here!\n\n";
+	}
+	else {
+		cout << "\nAll questions:\n\n";
+		while (file) {
+			getline(file, line);
+
+			if (line[0] == 'Q') { //Only print lines with Qx tag
+				cout << line << endl;
+			}
 		}
 	}
 	file.close();

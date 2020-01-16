@@ -12,9 +12,9 @@ int Quiz::askQ(int qnum) {
 	vector<string>::iterator it; //iterator
 
 	if (qnum > 0) {
-		cout << "Q" << qnum << ":"; //print current question number
+		cout << "Q" << qnum << ": "; //print current question number
 	}
-	for (int i = 3; i < question.length(); i++) { //print question without "Qx" tag
+	for (int i = QINDEX; i < question.length(); i++) { //print question without "Qx" tag
 		cout << question[i];
 	}
 

@@ -1,120 +1,90 @@
 
-Q1: What is Chroms little sisters name?
-Lissa
-Nowi
-Emmeryn
-Mila
+Q1:  Who is Cirilla's destiny?
+Geralt of Rivia
+Yennefer of Vengeberg
+Tissaia de Vries
+Triss Merigold
 
-Q2: What is Sothis also known as?
+Q2:  What is Sothis also known as?
 The Beginning
-The Firestorm
-The Earth Mother
 The End
+The Reborn
+The Little Green-Haired Lady
 
-Q3: What Crest does Byleth bear?
-The Crest of Flames
-The Crest of Charon
-The Crest of Gloucester
-The Crest of Seiros
-
-Q4: What is Flayn's true name?
-Cethleann
-Sothis
-Seiros
-Naga
-
-Q5: What relation is Seteth to Flayn?
-Father
-Son
-Uncle
-Brother
-
-Q6: How many Crests does Lysithea von Ordelia have?
-2
-4
-1
-12
-
-Q7: Which of these is not one of the Four Saints?
-Saint Seiros
-Saint Cichol
-Saint Indech
-Saint Cethleann
-
-Q8: What colour is Marianne's hair?
-Blue
-Pink
-Grey
-Red
-
-Q9: Who is the leader of The Church of Seiros?
+Q3:  Who is the leader of the Church of Seiros?
 Lady Rhea
-Lord Lonato
 Lady Cornelia
-Lord Galatea
+Lord Lonato
+Lorenz Hellman Gloucester
 
-Q10: What are the names of the Royal Siblings of Renais?
-Eirika & Ephraim
-Nino & Ninian
-Nowi & Naga
-Tiki & Mila
-
-Q11: What was the continent of Valm originally called?
-Valentia
-Archanea
-Magvel
-Duscur
-
-Q12: Who is the Flame Emperor?
-Edelgard von Hresvelg
-Thales
-Jeritza von Hrym
-Ferdinand von Aegir
-
-Q13: What is the name of Mercedes' younger brother?
-Emile
-Caspar
-Gilbert
-Alois
-
-Q14: Where is Dimitri's retainer, Dedue, originally from?
-Duscur
-Almyra
-Shambhala
-Brigid
-
-Q15: What is the name of the Heroes Relic of House Goneril?
-Freikugel
-Failnaught
-L£in
-Blutgang
-
-Q16: What weapon does Catherine wield?
-Thunderbrand
-Crusher
-Areadbhar
-Thyrsus
-
-Q17: What unique class can only be learned by one student at the Officer's Academy?
-Dancer
-Bard
-Lord
-Manakete
-
-Q18: What is the default name for the Avatar in Fire Emblem: Awakening?
-Robin
-Corrin
-Byleth
-Alm
-
-Q19: What is the inevitable fate of all Manaketes?
+Q4:  What is the inevitable fate of all Manaketes?
 Insanity
+Burning to ashes and rising again
 Death
-Metamorphosis
-Breaking out into song and dance at a very inappropriate time
+Breaking out into song and dance at inappropriate moments
 
-Q20: What is the toy that Geralt and Yennefer used?
+Q5:  What deformity did Yennefer of Vengeberg suffer from?
+Hunchback
+Lazy eye
+Clubfoot
+Ingrown townails
+
+Q6:  What is the default name of the Avatar in Fire Emblem: Awakening?
+Robin
+Byleth
+Corrin
+Marth
+
+Q7:  Which is the rarest colour of dragon in Witcher lore?
+Gold
+Red
+Green
+Black
+
+Q8:  What was the continent of Valm originally called?
+Valentia
+F¢dlan
+Archanea
+Ylisse
+
+Q9:  What is the toy that Geralt and Yenner used?
 Unicorn plushie
 Teddy bear
 Bunny slippers
-BFD
+Ragdoll
+
+Q10: Who is the Flame Emperor?
+Edelgard von Hresvelg
+Dimitri Blaiddyd
+Claude von Riegan
+Lysithea von Ordelia
+
+Q11: What weapon does Catherine wield?
+Thunderbrand
+Blutgang
+L£in
+Crusher
+
+Q12: What is the name of Mercedes' younger brother?
+Emile
+Lorenz
+Ashe
+Gilbert
+
+Q13: Where is Dimitris retainer, Dedue, originally from?
+Duscur
+Archanea
+Sreng
+Brigid
+
+Q14: What Crest does Byleth bear?
+Crest of Flames
+Crest of Seiros
+Crest of Charon
+Crest of Lamine
+
+Q15: What is the name of the Hero's Relic of House Goneril?
+Freikugel
+Rafail
+Areadbhar
+Failnaught

@@ -41,7 +41,6 @@ int main() {
 				addQuestion();
 				break;
 			case 3:
-				cout << "All questions:\n\n";
 				qList();
 				cout << endl;
 				break;
