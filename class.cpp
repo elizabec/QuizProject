@@ -35,7 +35,8 @@ int Quiz::askQ(int qnum) {
 		if (guess < 1 || guess > 3) {
 			cout << INVALID;
 			cin.clear();
-			char(cin.get());
+			cin.ignore(numeric_limits<streamsize>::max(), '\n'); //no looping
+			char(cin.get()); //flush out character
 		}
 	} while (guess < 1 || guess > 3);
 	if (guess == correct) {

@@ -50,10 +50,10 @@ void addQuestion() {
 				cout << INVALID;
 			}
 		} while (option != 'N' && option != 'Y');
-		if (option == 'n' || option == 'N') {
+		if (option == 'N') {
 			break;
 		}
-		else if (option == 'y' || option == 'Y') {
+		else if (option == 'Y') {
 
 			file << endl;
 			do { // making sure input is not empty

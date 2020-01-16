@@ -25,9 +25,18 @@ int main() {
 			switch (option) {
 			case 1:
 				char choice;
-				cout << "Do you want to start a new game (Y/N)? ";
-				cin >> choice;
-				choice = toupper(choice); //making character uppercase, for simplicity
+				do {
+					cout << "Do you want to start a new game (Y/N)? ";
+					cin >> choice;
+					choice = toupper(choice); //making character uppercase, for simplicity
+					if (choice != 'Y' && choice != 'N') {
+						cout << INVALID;
+						cout << "Press Enter to try again.\n";
+						cin.clear();
+						cin.ignore(numeric_limits<streamsize>::max(), '\n'); 
+						char(cin.get());
+					}
+				} while (choice != 'Y' && choice != 'N');
 				switch (choice) {
 				case 'Y':
 					cout << "Starting new game!\n\n";
@@ -35,9 +44,6 @@ int main() {
 					break;
 				case 'N':
 					cout << "Shame...\n";
-					break;
-				default:
-					cout << INVALID;
 					break;
 				}
 				break;
@@ -57,6 +63,10 @@ int main() {
 					filedel = toupper(filedel); //again, making char uppercase
 					if (filedel != 'Y' && filedel != 'N') {
 						cout << INVALID;
+						cout << "Press Enter to try again...";
+						cin.clear();
+						cin.ignore(numeric_limits<streamsize>::max(), '\n'); //ignore
+						char(cin.get()); //flush
 					}
 				} while (filedel != 'Y' && filedel != 'N');
 				
@@ -67,8 +77,6 @@ int main() {
 					break;
 				case 'N':
 					break;
-				default:
-					cout << INVALID;
 				}
 				break;
 			case 5:
